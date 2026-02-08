@@ -1,16 +1,175 @@
-# vanta_app
+```markdown
+# 🚀 Vanta App
 
-A new Flutter project.
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Getting Started
+**Vanta** adalah aplikasi komunitas modern berbasis Flutter yang memungkinkan pengguna membuat, bergabung, dan mengelola komunitas dalam satu platform yang cepat, sederhana, dan scalable.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔐 Google Sign-In Authentication  
+- 👥 Create & Join Communities  
+- 🛡️ Admin Role Management  
+- 📰 Community Feed  
+- ⚡ Fast & Responsive UI  
+- ☁️ Firebase Backend  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧠 Architecture
+
+```
+
+lib/
+├── core/
+├── models/
+├── services/
+├── screens/
+├── widgets/
+└── main.dart
+
+````
+
+Clean Architecture (progressively applied)
+
+---
+
+## 🛠️ Tech Stack
+
+**Mobile**
+- Flutter  
+
+**Backend**
+- Firebase Authentication  
+- Cloud Firestore  
+
+**Tools**
+- GitHub  
+- Android Studio / VS Code  
+
+---
+
+## ⚡ Getting Started
+
+### Clone repository
+```bash
+git clone https://github.com/USERNAME/vanta-app.git
+````
+
+### Masuk folder
+
+```bash
+cd vanta-app
+```
+
+### Install dependencies
+
+```bash
+flutter pub get
+```
+
+### Run app
+
+```bash
+flutter run
+```
+
+---
+
+## 🔐 Firebase Setup
+
+Tambahkan file:
+
+```
+google-services.json
+```
+
+ke:
+
+```
+android/app/
+```
+
+---
+
+## 📱 Screenshots
+
+Simpan screenshot di folder:
+
+```
+/screenshots
+```
+
+Contoh tampilan:
+
+```markdown
+<p align="center">
+  <img src="screenshots/login.png" width="250"/>
+  <img src="screenshots/home.png" width="250"/>
+  <img src="screenshots/community.png" width="250"/>
+</p>
+```
+
+---
+
+## 🚧 Status
+
+**Active Development**
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Completed
+
+* Authentication
+* Community Creation
+* Join System
+
+### 🔄 In Progress
+
+* Community Feed
+* Admin Controls
+
+### ⏳ Planned
+
+* Push Notifications
+* Media Sharing
+* Community Discovery
+* Dark Mode
+* Web / PWA Version
+
+---
+
+## 🎯 Vision
+
+Membangun platform komunitas yang sederhana, powerful, dan siap production untuk membantu orang terhubung dan berkolaborasi.
+
+---
+
+## 🤝 Contributing
+
+1. Fork repository
+2. Create branch
+3. Commit changes
+4. Open Pull Request
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👨‍💻 Author
+
+**Reza Muhammad**
+
+```
+```
