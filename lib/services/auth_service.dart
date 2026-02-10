@@ -7,11 +7,19 @@ class AuthService {
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   final FirebaseFirestore _db = FirebaseFirestore.instance;
 
-  Future<User?> signInWithGoogle() async {
+  // ⭐ auth listener
+  Stream<User?> get authStateChanges => _auth.authStateChanges();
+
+  Future<User?> signInWithGoogle({bool forceAccountSelection = false}) async {
+
+    // kalau mau paksa pilih akun
+    if (forceAccountSelection) {
+      await _googleSignIn.signOut();
+    }
+
     final GoogleSignInAccount? googleUser =
         await _googleSignIn.signIn();
 
-    // user cancel login
     if (googleUser == null) return null;
 
     final GoogleSignInAuthentication googleAuth =
@@ -34,9 +42,14 @@ class AuthService {
     return user;
   }
 
+  // ⭐ logout bersih (INI KUNCI ACCOUNT PICKER)
+  Future<void> signOut() async {
+    await _googleSignIn.signOut();
+    await _auth.signOut();
+  }
+
   Future<void> _createUserIfNotExists(User user) async {
     final doc = _db.collection('users').doc(user.uid);
-
     final snapshot = await doc.get();
 
     if (!snapshot.exists) {

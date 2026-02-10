@@ -12,7 +12,20 @@
           "package_name": "com.example.vanta_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "143935591882-40klultuffesme8unel5d9ev8fhrhb6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vanta_app",
+            "certificate_hash": "73514445f511f75b755e5c6d4b33796e8e8baccc"
+          }
+        },
+        {
+          "client_id": "143935591882-tu8egslq4g9naopq2f86e78qi33b304o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDa0C3EQob6ooezJGrcRLBLLOhwRd9g14I"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143935591882-tu8egslq4g9naopq2f86e78qi33b304o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "143935591882-l21vmk764hi6ld9bgle9se6vsnpmja2e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.vantaApp"
+              }
+            }
+          ]
         }
       }
     }

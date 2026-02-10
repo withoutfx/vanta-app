@@ -8,17 +8,18 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(
-          onPressed: () async {
-            final user = await AuthService().signInWithGoogle();
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () async {
+                await AuthService().signInWithGoogle();
+              },
+              child: const Text("Login with Google"),
+            ),
 
-            if (user != null) {
-              print("LOGIN SUCCESS");
-            } else {
-              print("LOGIN FAILED");
-            }
-          },
-          child: const Text("Login with Google"),
+            const SizedBox(height: 20),
+          ],
         ),
       ),
     );
