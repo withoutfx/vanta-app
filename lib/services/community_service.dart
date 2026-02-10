@@ -15,7 +15,7 @@ class CommunityService {
     // create community doc
     final communityRef = await _db.collection('communities').add({
       'name': name,
-      'ownerId': user.uid,
+      'adminId': user.uid,
       'privacyType': 'public',
       'memberCount': 1,
       'createdAt': FieldValue.serverTimestamp(),
